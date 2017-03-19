@@ -1,0 +1,527 @@
+/*
+Version: 2014-10-27.01
+*/
+/*
+@font-face {
+  font-family: "dk";
+  src: url('../fonts/MetaWebPro-Normal.eot');
+  src: local('â˜º'), url('../fonts/MetaWebPro-Normal.woff') format("woff");
+  font-style: normal;
+  font-weight: normal;
+}
+@font-face {
+  font-family: "dk";
+  src: url('../fonts/MetaWebPro-Bold.eot');
+  src: local('â˜º'), url('../fonts/MetaWebPro-Bold.woff') format("woff");
+  font-style: normal;
+  font-weight: bold;
+}
+*/
+
+@font-face {
+  font-family: "dk Book";
+  src: url('../fonts/MetaWebPro-Book.eot');
+  src: local('â˜º'), url('../fonts/MetaWebPro-Book.woff') format("woff");
+  font-style: normal;
+  font-weight: normal;
+}
+@font-face {
+  font-family: "dk Book";
+  src: url('../fonts/MetaWebPro-Bold.eot');
+  src: local('â˜º'), url('../fonts/MetaWebPro-Bold.woff') format("woff");
+  font-style: normal;
+  font-weight: bold;
+}
+
+@font-face {
+  font-family: "dk Cond";
+  src: url('../fonts/MetaWebPro-CondNormal.eot');
+  src: local('â˜º'), url('../fonts/MetaWebPro-CondNormal.woff') format("woff");
+  font-style: normal;
+  font-weight: normal;
+}
+@font-face {
+  font-family: "dk Cond";
+  src: url('../fonts/MetaWebPro-CondBold.eot');
+  src: local('â˜º'), url('../fonts/MetaWebPro-CondBold.woff') format("woff");
+  font-style: normal;
+  font-weight: bold;
+}
+/*
+@font-face {
+  font-family: "dk Cond Black";
+  src: url('../fonts/MetaWebPro-CondBlack.eot');
+  src: local('â˜º'), url('../fonts/MetaWebPro-CondBlack.woff') format("woff");
+  font-style: normal;
+  font-weight: 900;
+}
+@font-face {
+  font-family: "dk Cond Book";
+  src: url('../fonts/MetaWebPro-CondBook.eot');
+  src: local('â˜º'), url('../fonts/MetaWebPro-CondBook.woff') format("woff");
+  font-style: normal;
+  font-weight: normal;
+}
+@font-face {
+  font-family: "dk Cond Book";
+  src: url('../fonts/MetaWebPro-CondBold.eot');
+  src: local('â˜º'), url('../fonts/MetaWebPro-CondBold.woff') format("woff");
+  font-style: normal;
+  font-weight: bold;
+}
+*/
+
+
+
+
+* {
+	font-family: 'dk Book', Arial, sans-serif; 
+	font-size: 14px;
+}
+
+body {
+	background: #fff;
+}
+      
+#logo {
+	position: fixed;
+	top: 0px;
+	left: 0px;
+    width: 210px;
+    height: 33px;
+    padding-left: 20px;
+    font-size: 32px;
+    font-weight: bold;
+	padding-top: 7px;
+    /*
+    color: rgb(204,204,208) !important;
+   	background: #efefef;
+   	border-bottom: solid 1px #ccc;
+   	*/
+    color: #fff !important;
+   	background: #08c;
+	border-bottom: solid 1px #007aba;
+   	z-index: 1000;
+}
+
+
+#logo::before {
+	content: "SkyNET // ";
+	font-size: 16px;
+	font-weight: 200;
+	
+}
+
+/*
+#menu::before {
+	content: url('../images/dk/homekit-hero.png');
+	padding-left: 35px;
+}
+*/           
+#menu {
+	position: absolute;
+	top: 60px;
+	left: 10px;
+	width: 180px;
+}
+
+#menu table table.roomBlock1 {
+	display: none;
+}
+
+#hdr {
+	position: fixed;
+	top: 0px;
+	left: 230px;
+	right: 0px;
+	height: 40px;
+	z-index: 1000;
+	overflow: hidden;
+   	background: #08c;
+	border-bottom: solid 1px #007aba;
+
+	/*
+	border-bottom: solid 1px #ccc;
+	background: #efefef;
+	*/
+}
+
+
+#hdr input {
+	height: 20px;
+	border: none;
+	margin: 0;
+	/*
+	background: #f5f5f5;
+	color: #666;
+	border-left: solid 1px #ccc;
+	border-right: solid 1px #ccc;
+	*/
+	width: 600px;
+	
+	background: #007aba;
+	color: #fff;
+	border-left: solid 1px #fff;
+	border-right: solid 1px #fff;
+	
+}
+
+
+#content {
+	position: absolute;
+	top: 40px;
+	left: 230px;
+	right: 20px;
+}
+
+.devType {
+	color: #08c;
+	padding-top: 20px;
+	font-size: 24px;
+    font-weight: normal;
+    font-family: 'dk Cond';
+}
+
+a {
+	color: #404040;
+	text-decoration: none;
+}
+
+a :hover,
+a:hover {
+	color: #08c;
+}
+
+a :active,
+a:active {
+	color: #08c;
+}
+
+#menu a {
+	display: block;
+}
+
+#content table {
+	width: 100%;
+}
+
+#content table.block.wide td:first-child {
+	width: 50%;
+}
+
+#content table .col3 a {
+	padding: 5px;
+}
+
+img {
+	border-style: none;
+}
+
+input[type='text'] {
+	border: solid 1px #ccc;
+	padding: 10px;
+	border-top: 0;
+	border-bottom: 0;
+	outline: 0;
+}
+
+.wide {
+	width: 100%;
+}
+
+table {
+	border-collapse: collapse;
+}
+
+table.block {
+	border: none;
+	background: #fff;
+}
+
+table.block tr.odd {
+	background: #fff;
+}
+
+table.block td {
+	padding: 10px;
+	border: none;
+	padding-left: 0;
+}
+
+table.block tr {
+	border-bottom: 1px solid #efefef;
+}
+
+table.block tr:last-child {
+	border: none;
+}
+
+
+table#room,
+table.room {
+	width: 190px;
+}
+
+table#room tr td,
+table.room tr td {
+	/*
+	border-bottom: solid 1px #fff;
+	*/
+}
+
+table#room tr td,
+table.room tr td {
+	padding: 0;
+}
+
+table#room.roomBlock3,
+table.room.roomBlock3 {
+	background: #fff;
+	border-top: 1px solid #efefef;
+	border-bottom: 1px solid #efefef;
+}
+
+
+table.room tr td a {
+	padding: 10px;
+	font-size: 16px;
+	line-height: 20px;
+	margin: 0;
+}
+
+
+table.room.roomBlock1 tr td a,
+table.room.roomBlock2 tr td a
+{
+	/*
+	background: #08c;
+	color: rgba(255,255,255, 0.5);
+	*/
+}
+
+table#room tr.sel td a,
+table.room tr.sel td a
+{
+	background: #08c;
+	color: #fff;
+	position:relative;
+	margin-left: -11px;
+	padding-left: 21px;
+}
+
+table#room tr.sel td a:after,
+table.room tr.sel td a:after {
+	border-top: 20px solid transparent;
+	border-bottom: 20px solid transparent;
+	border-left: 15px solid #0089c8;
+	content: " ";
+	height: 0;
+	margin-top: -20px;
+	position: absolute;
+	right: -15px;
+	top: 50%;
+	width: 0;
+
+}
+
+#right {
+	position: absolute;
+	top: 20px;
+	left: 180px;
+	bottom: 20px;
+	right: 10px;
+}
+
+h2, h3, h4 {
+	color: rgb(0, 102, 170);
+    margin-top: 1.5em;
+    font-weight: normal;
+   	font-size: 24px;
+}
+
+div#block {
+	border: 1px solid gray;
+	background: #f3f3f3;
+	padding: 0.7em;
+}
+
+div#dist {
+	padding-top: 0.3em;
+}
+
+a img {
+	border-style: none;
+}
+
+/* detail-selector & slider */
+select {
+	margin-left: 5px;
+	margin-right: 5px;
+}
+
+.set,.attr {
+	margin-bottom: 5px;
+	float: left;
+}
+
+.slider {
+	float: left;
+	width: 250px;
+	height: 26px;
+}
+
+.set .slider {
+	background: #fefefe;
+	border-radius: 8px;
+}
+
+/* timepicker */
+.set .set {
+	margin-bottom: 2px;
+	margin-top: 3px;
+}
+
+.handle {
+	position: relative;
+	cursor: pointer;
+	width: 50px;
+	height: 20px;
+	line-height: 20px;
+	user-select: none;
+    border: 3px solid;
+    color: #278727;
+    text-align: center;
+} 
+
+.downText {
+	margin-top: 2px;
+}
+
+svg,
+svg.icon {
+	width: 30px;
+	height: 30px;
+}
+
+img.icon {
+	background: #fff;
+	width: 30px;
+	height: 30px;
+}
+
+td > .makeTable, 
+td > .makeSelect {
+	clear: both;
+}
+
+td > .makeSelect {
+	border-top: solid 1px #efefef;
+	border-bottom: solid 1px #efefef;
+	padding-top: 10px;
+	padding-bottom: 10px;
+	margin-top: 10px;
+	margin-bottom: 10px;
+}
+
+td > .makeSelect > form > div,
+td > .makeSelect > form > input {
+	float: left;
+}
+
+/* Smartphones (landscape) ----------- */
+@media only screen 
+and (min-width : 321px) {
+
+	* {
+		font-size: 16px;
+	}
+
+	.devType,
+	h2, h3, h4	
+	   	font-size: 24px;
+	}
+	
+	svg,
+	svg.icon {
+		width: 20px;
+		height: 20px;
+	}
+
+
+}
+
+
+/* Smartphones (portrait) ----------- */
+@media only screen 
+and (max-width : 320px) {
+
+	* {
+		font-size: 16px;
+	}
+
+	.devType,
+	h2, h3, h4	
+	   	font-size: 24px;
+	}
+
+	svg,
+	svg.icon {
+		width: 26px;
+		height: 26px;
+	}
+	
+}
+
+
+/* iPads (landscape) ----------- */
+@media only screen 
+and (min-device-width : 768px) 
+and (max-device-width : 1024px) 
+and (orientation : landscape) {
+
+	* {
+		font-size: 16px;
+	}
+
+	.devType,
+	h2, h3, h4	
+	   	font-size: 24px;
+	}
+
+	svg,
+	svg.icon {
+		width: 20px;
+		height: 20px;
+	}
+	
+
+
+
+}
+
+
+/* iPads (portrait) ----------- */
+@media only screen 
+and (min-device-width : 768px) 
+and (max-device-width : 1024px) 
+and (orientation : portrait) {
+	
+	* {
+		font-size: 16px;
+	}
+
+	.devType,
+	h2, h3, h4	
+	   	font-size: 24px;
+	}
+
+	svg,
+	svg.icon {
+		width: 26px;
+		height: 26px;
+	}
+	
+
+
+}
+*/
